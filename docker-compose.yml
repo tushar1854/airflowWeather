@@ -1,0 +1,13 @@
+version: '3' 
+services:
+  airflow-webserver:
+    image: apache/airflow:latest  
+    ports:
+      - 8080:8080  
+    volumes:
+      - ./airflow:/opt/airflow  
+    command: airflow standalone
+  
+
+
+
